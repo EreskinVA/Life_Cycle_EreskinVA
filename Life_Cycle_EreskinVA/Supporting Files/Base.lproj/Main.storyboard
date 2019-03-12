@@ -140,7 +140,10 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkN-In-DZF">
-                                <rect key="frame" x="16" y="303" width="343" height="32"/>
+                                <rect key="frame" x="94" y="303" width="187" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="7Q0-Qw-jtf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Тест NavigationController">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -152,11 +155,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t14-l5-7NJ" firstAttribute="trailing" secondItem="dkN-In-DZF" secondAttribute="trailing" constant="16" id="A4N-4t-CeL"/>
                             <constraint firstItem="TJv-zm-naO" firstAttribute="leading" secondItem="t14-l5-7NJ" secondAttribute="leading" id="V1Q-eZ-wed"/>
                             <constraint firstItem="dkN-In-DZF" firstAttribute="centerX" secondItem="t14-l5-7NJ" secondAttribute="centerX" id="Vfk-en-bIN"/>
                             <constraint firstItem="dkN-In-DZF" firstAttribute="centerY" secondItem="t14-l5-7NJ" secondAttribute="centerY" id="jn1-Dy-54p"/>
-                            <constraint firstItem="dkN-In-DZF" firstAttribute="leading" secondItem="t14-l5-7NJ" secondAttribute="leading" constant="16" id="uKu-1q-fss"/>
                             <constraint firstItem="TJv-zm-naO" firstAttribute="trailing" secondItem="t14-l5-7NJ" secondAttribute="trailing" id="vmx-aD-Fyn"/>
                             <constraint firstItem="TJv-zm-naO" firstAttribute="top" secondItem="t14-l5-7NJ" secondAttribute="top" id="zYM-5p-Tza"/>
                         </constraints>
@@ -177,7 +178,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLP-tn-GQv">
-                                <rect key="frame" x="16" y="327.5" width="343" height="32"/>
+                                <rect key="frame" x="163" y="327.5" width="49" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Iu3-mC-45Q"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Выход">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -198,13 +202,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NT2-Dj-OvN" firstAttribute="trailing" secondItem="SLP-tn-GQv" secondAttribute="trailing" constant="16" id="JGq-SA-T0M"/>
                             <constraint firstItem="Wil-Mo-BRX" firstAttribute="leading" secondItem="NT2-Dj-OvN" secondAttribute="leading" id="Tn1-2a-T21"/>
                             <constraint firstItem="SLP-tn-GQv" firstAttribute="centerX" secondItem="NT2-Dj-OvN" secondAttribute="centerX" id="UpB-SL-PQ2"/>
                             <constraint firstItem="SLP-tn-GQv" firstAttribute="centerY" secondItem="NT2-Dj-OvN" secondAttribute="centerY" id="ZM8-Hk-eHE"/>
                             <constraint firstItem="Wil-Mo-BRX" firstAttribute="top" secondItem="NT2-Dj-OvN" secondAttribute="top" id="ZPj-cR-Gvy"/>
                             <constraint firstItem="NT2-Dj-OvN" firstAttribute="trailing" secondItem="Wil-Mo-BRX" secondAttribute="trailing" id="fhL-Sl-eyP"/>
-                            <constraint firstItem="SLP-tn-GQv" firstAttribute="leading" secondItem="NT2-Dj-OvN" secondAttribute="leading" constant="16" id="gHS-bK-DZp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NT2-Dj-OvN"/>
                     </view>
@@ -212,10 +214,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dk1-J3-Hhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="RYd-P8-4qy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1687" y="910"/>
+            <point key="canvasLocation" x="1685.5999999999999" y="909.89505247376314"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="37M-Dk-91d"/>
+        <segue reference="IeO-Z7-AJv"/>
     </inferredMetricsTieBreakers>
 </document>
