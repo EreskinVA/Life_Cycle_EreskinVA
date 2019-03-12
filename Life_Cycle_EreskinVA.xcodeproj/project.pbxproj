@@ -12,6 +12,7 @@
 		2B1CA7F3223792BD009CFC7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1CA7F1223792BD009CFC7D /* Main.storyboard */; };
 		2B1CA7F5223792BE009CFC7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1CA7F4223792BE009CFC7D /* Assets.xcassets */; };
 		2B1CA7F8223792BE009CFC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1CA7F6223792BE009CFC7D /* LaunchScreen.storyboard */; };
+		2B1CA80022379629009CFC7D /* MessageTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CA7FF22379629009CFC7D /* MessageTVController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2B1CA7F4223792BE009CFC7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B1CA7F7223792BE009CFC7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B1CA7F9223792BE009CFC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1CA7FF22379629009CFC7D /* MessageTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTVController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		2B1CA7EC223792BD009CFC7D /* Life_Cycle_EreskinVA */ = {
 			isa = PBXGroup;
 			children = (
-				2B1CA7ED223792BD009CFC7D /* AppDelegate.swift */,
-				2B1CA7EF223792BD009CFC7D /* ViewController.swift */,
-				2B1CA7F1223792BD009CFC7D /* Main.storyboard */,
-				2B1CA7F4223792BE009CFC7D /* Assets.xcassets */,
-				2B1CA7F6223792BE009CFC7D /* LaunchScreen.storyboard */,
+				2B1CA8012237A006009CFC7D /* Controllers */,
+				2B1CA8022237A00F009CFC7D /* Supporting Files */,
 				2B1CA7F9223792BE009CFC7D /* Info.plist */,
 			);
 			path = Life_Cycle_EreskinVA;
+			sourceTree = "<group>";
+		};
+		2B1CA8012237A006009CFC7D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B1CA7EF223792BD009CFC7D /* ViewController.swift */,
+				2B1CA7FF22379629009CFC7D /* MessageTVController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2B1CA8022237A00F009CFC7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B1CA7ED223792BD009CFC7D /* AppDelegate.swift */,
+				2B1CA7F1223792BD009CFC7D /* Main.storyboard */,
+				2B1CA7F4223792BE009CFC7D /* Assets.xcassets */,
+				2B1CA7F6223792BE009CFC7D /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			files = (
 				2B1CA7F0223792BD009CFC7D /* ViewController.swift in Sources */,
 				2B1CA7EE223792BD009CFC7D /* AppDelegate.swift in Sources */,
+				2B1CA80022379629009CFC7D /* MessageTVController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

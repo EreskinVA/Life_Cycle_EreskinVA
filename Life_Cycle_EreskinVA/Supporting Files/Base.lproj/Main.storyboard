@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bam-dS-sTe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Red-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Red" id="BYZ-38-t0r" customClass="ViewController" customModule="Life_Cycle_EreskinVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zQ-Iu-LTq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="xoL-0t-knG"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="omi-iX-JSA" kind="embed" identifier="MessagesSegue" id="zdu-yg-IQ0"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3zQ-Iu-LTq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MuE-73-zSL"/>
+                            <constraint firstItem="3zQ-Iu-LTq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cUR-Zg-za4"/>
+                            <constraint firstItem="3zQ-Iu-LTq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jK9-qv-Q1R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Red" id="mOg-KG-Ars"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610.39999999999998" y="909.89505247376314"/>
+        </scene>
+        <!--Green-->
+        <scene sceneID="OLM-if-YKL">
+            <objects>
+                <viewController title="Green" id="hli-50-s0Q" customClass="ViewController" customModule="Life_Cycle_EreskinVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xFx-9h-FZG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQG-ig-ttg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6Nk-z7-fuH"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="omi-iX-JSA" kind="embed" identifier="MessagesSegue" id="CuZ-PE-o5U"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qQG-ig-ttg" firstAttribute="leading" secondItem="6od-ch-rdx" secondAttribute="leading" id="9po-Id-Qwg"/>
+                            <constraint firstItem="qQG-ig-ttg" firstAttribute="top" secondItem="6od-ch-rdx" secondAttribute="top" id="AaQ-FV-sFl"/>
+                            <constraint firstItem="qQG-ig-ttg" firstAttribute="trailing" secondItem="6od-ch-rdx" secondAttribute="trailing" id="C82-Hr-8nX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6od-ch-rdx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Green" id="Xvg-ZE-w5I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qie-Dx-qFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="909.89505247376314"/>
+        </scene>
+        <!--MessageTV Controller-->
+        <scene sceneID="Obh-1j-iuT">
+            <objects>
+                <tableViewController id="omi-iX-JSA" customClass="MessageTVController" customModule="Life_Cycle_EreskinVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="30" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vwt-R1-noy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="30" id="h71-Ce-GeN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h71-Ce-GeN" id="r37-xW-e9P">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="omi-iX-JSA" id="1mW-NF-ihb"/>
+                            <outlet property="delegate" destination="omi-iX-JSA" id="Uqz-N6-hJM"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nhr-HV-zPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521" y="1506"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8Wn-GW-Y3x">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bam-dS-sTe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iUw-3l-qFB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ZbD-Sl-0rZ"/>
+                        <segue destination="hli-50-s0Q" kind="relationship" relationship="viewControllers" id="Xkf-wK-5sg"/>
+                        <segue destination="mg9-4f-fIT" kind="relationship" relationship="viewControllers" id="gd4-o2-Dal"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnT-qt-2nT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Blue-->
+        <scene sceneID="fIZ-hX-7lx">
+            <objects>
+                <viewController title="Blue" id="mg9-4f-fIT" customClass="ViewController" customModule="Life_Cycle_EreskinVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U8t-Yx-1GT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJv-zm-naO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bLZ-KS-pfn"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="omi-iX-JSA" kind="embed" identifier="MessagesSegue" id="IeO-Z7-AJv"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkN-In-DZF">
+                                <rect key="frame" x="16" y="303" width="343" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Тест NavigationController">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="A55-df-16g" kind="presentation" id="TKq-T7-Vt9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t14-l5-7NJ" firstAttribute="trailing" secondItem="dkN-In-DZF" secondAttribute="trailing" constant="16" id="A4N-4t-CeL"/>
+                            <constraint firstItem="TJv-zm-naO" firstAttribute="leading" secondItem="t14-l5-7NJ" secondAttribute="leading" id="V1Q-eZ-wed"/>
+                            <constraint firstItem="dkN-In-DZF" firstAttribute="centerX" secondItem="t14-l5-7NJ" secondAttribute="centerX" id="Vfk-en-bIN"/>
+                            <constraint firstItem="dkN-In-DZF" firstAttribute="centerY" secondItem="t14-l5-7NJ" secondAttribute="centerY" id="jn1-Dy-54p"/>
+                            <constraint firstItem="dkN-In-DZF" firstAttribute="leading" secondItem="t14-l5-7NJ" secondAttribute="leading" constant="16" id="uKu-1q-fss"/>
+                            <constraint firstItem="TJv-zm-naO" firstAttribute="trailing" secondItem="t14-l5-7NJ" secondAttribute="trailing" id="vmx-aD-Fyn"/>
+                            <constraint firstItem="TJv-zm-naO" firstAttribute="top" secondItem="t14-l5-7NJ" secondAttribute="top" id="zYM-5p-Tza"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t14-l5-7NJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blue" id="GsM-x7-Na6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFK-SS-y1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.60000000000002" y="909.89505247376314"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="kRy-Gg-apX">
+            <objects>
+                <viewController title="Yellow" id="A55-df-16g" customClass="ViewController" customModule="Life_Cycle_EreskinVA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dG3-JI-zmw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLP-tn-GQv">
+                                <rect key="frame" x="16" y="327.5" width="343" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Выход">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RYd-P8-4qy" kind="unwind" unwindAction="unwindWithSegue:" id="KhJ-Qd-GC4"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wil-Mo-BRX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="gwC-Ax-Iz2"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="omi-iX-JSA" kind="embed" id="37M-Dk-91d"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NT2-Dj-OvN" firstAttribute="trailing" secondItem="SLP-tn-GQv" secondAttribute="trailing" constant="16" id="JGq-SA-T0M"/>
+                            <constraint firstItem="Wil-Mo-BRX" firstAttribute="leading" secondItem="NT2-Dj-OvN" secondAttribute="leading" id="Tn1-2a-T21"/>
+                            <constraint firstItem="SLP-tn-GQv" firstAttribute="centerX" secondItem="NT2-Dj-OvN" secondAttribute="centerX" id="UpB-SL-PQ2"/>
+                            <constraint firstItem="SLP-tn-GQv" firstAttribute="centerY" secondItem="NT2-Dj-OvN" secondAttribute="centerY" id="ZM8-Hk-eHE"/>
+                            <constraint firstItem="Wil-Mo-BRX" firstAttribute="top" secondItem="NT2-Dj-OvN" secondAttribute="top" id="ZPj-cR-Gvy"/>
+                            <constraint firstItem="NT2-Dj-OvN" firstAttribute="trailing" secondItem="Wil-Mo-BRX" secondAttribute="trailing" id="fhL-Sl-eyP"/>
+                            <constraint firstItem="SLP-tn-GQv" firstAttribute="leading" secondItem="NT2-Dj-OvN" secondAttribute="leading" constant="16" id="gHS-bK-DZp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NT2-Dj-OvN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dk1-J3-Hhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RYd-P8-4qy" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="910"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="37M-Dk-91d"/>
+    </inferredMetricsTieBreakers>
+</document>
